@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Dps Query</string>
+    <string name="heal">治疗职业</string>
+    <string name="tank">防护职业</string>
+    <string name="dps">进攻职业</string>
+    <string name="Blackmage">黑魔法师</string>
+    <string name="Summoner">召唤师</string>
+    <string name="Dragoon">龙骑士</string>
+    <string name="Ninja">忍者</string>
+    <string name="Bard">吟游诗人</string>
+    <string name="Machinist">机工士</string>
+    <string name="Redmage">赤魔法师</string>
+    <string name="Monk">武僧</string>
+    <string name="Samurai">武士</string>
+    <string name="Warrior">战士</string>
+    <string name="Darkknight">暗黑骑士</string>
+    <string name="Paladin">骑士</string>
+    <string name="Scholar">学者</string>
+    <string name="Astrologian">占星术士</string>
+    <string name="Whitemage">白魔法师</string>
+    <string name="input">请输入您的Dps</string>
+    <string name="print">得到您的Dps排名</string>
+    <string name="O9s">欧米茄零式阿尔法篇第一层</string>
+    <string name="O10s">欧米茄零式阿尔法篇第二层</string>
+    <string name="O11s">欧米茄零式阿尔法篇第三层</string>
+    <string name="O12s">欧米茄零式阿尔法篇第四层</string>
+</resources>
