@@ -13,5 +13,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
-        app:srcCompat="@mipmap/welcoming5" />
+        app:srcCompat="@mipmap/ff14ss" />
 </LinearLayout>

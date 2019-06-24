@@ -5,31 +5,54 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="最终幻想XIV伤害查询"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".DQActivity">
+        android:theme="@style/AppTheme5">
+        <activity android:name=".NinjaActivity"></activity>
+        <activity android:name=".RedmageActivity" />
+        <activity android:name=".MachinistActivity" />
+        <activity android:name=".MonkActivity" />
+        <activity android:name=".BardActivity" />
+        <activity android:name=".SamuraiActivity" />
+        <activity android:name=".BlackmageActivity" />
+        <activity
+            android:name=".DQActivity"
+            android:label="选择您的职业分类">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-        </activity>
-        <activity android:name=".JobActivity" />
-        <activity android:name=".Job2Activity" />
-        <activity android:name=".Job3Activity" />
-        <activity android:name=".QueryActivity" />
-        <activity android:name=".WelcomeActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name=".WelcomeGuideActivity" />
+        <activity
+            android:name=".JobActivity"
+            android:label="选择您的职业" />
+        <activity
+            android:name=".Job2Activity"
+            android:label="选择您的职业" />
+        <activity
+            android:name=".Job3Activity"
+            android:label="选择您的职业" />
         <activity android:name=".DpsOfSummoner1Activity" />
-        <activity android:name=".SummonerActivity"></activity>
+        <activity android:name=".DpsOfSummoner2Activity" />
+        <activity android:name=".DpsOfSummoner3Activity" />
+        <activity android:name=".DpsOfSummoner4Activity" />
+        <activity android:name=".DpsOfBlack1Activity" />
+        <activity android:name=".DpsOfBlack2Activity" />
+        <activity android:name=".DpsOfBlack3Activity" />
+        <activity android:name=".DpsOfBlack4Activity" />
+        <activity android:name=".DpsOfDragoon1Activity" />
+        <activity android:name=".DpsOfDragoon2Activity" />
+        <activity android:name=".DpsOfDragoon3Activity" />
+        <activity android:name=".DpsOfDragoon4Activity" />
+
+
+
+        <activity
+            android:name=".SummonerActivity"
+            android:label="选择您想要查看的高难度副本" />
     </application>
 
 </manifest>

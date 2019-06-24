@@ -1,25 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Job2Activity">
+    tools:context=".Job2Activity"
+    android:background="#757575">
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/Warrior"/>
+        android:layout_height="139dp"
+        android:background="@drawable/btn_bg_red"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:text="@string/Warrior"
+        android:textSize="23dp"
+        android:textColor="#eeeeee"/>
+
+    <Button
+        android:layout_width="412dp"
+
+
+        android:layout_alignParentTop="true"
+        android:layout_height="139dp"
+        android:background="@drawable/btn_bg_red"
+
+        android:layout_marginTop="257dp"
+        android:text="@string/Darkknight"
+        android:textSize="23dp"
+        android:textColor="#eeeeee"/>
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/Darkknight"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/Paladin"/>
 
-</LinearLayout>
+        android:layout_height="139dp"
+
+        android:layout_alignParentTop="true"
+
+
+        android:layout_marginTop="82dp"
+        android:background="@drawable/btn_bg_red"
+        android:text="@string/Paladin"
+        android:textColor="#eeeeee"
+        android:textSize="23dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="128dp"
+        android:layout_height="113dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-10dp"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginTop="104dp"
+        app:srcCompat="@drawable/qishi" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="111dp"
+        android:layout_height="116dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="210dp"
+        app:srcCompat="@drawable/heiqi" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="122dp"
+        android:layout_height="109dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-7dp"
+        android:layout_marginLeft="-7dp"
+        android:layout_marginBottom="44dp"
+        app:srcCompat="@drawable/zhanshi" />
+
+</RelativeLayout>

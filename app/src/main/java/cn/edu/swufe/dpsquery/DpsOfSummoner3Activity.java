@@ -27,27 +27,27 @@ public class DpsOfSummoner3Activity extends ListActivity {
         listItems = new ArrayList<HashMap<String, String>>();
         HashMap<String, String> map1= new HashMap<String, String>();
         map1.put("parse", "99th Percentile");
-        map1.put("dps", "9028.15");
+        map1.put("dps", "7946.56");
 
         HashMap<String, String> map2 = new HashMap<String, String>();
         map2.put("parse", "95th Percentile");
-        map2.put("dps", "8652.03");
+        map2.put("dps", "7654.27");
 
         HashMap<String, String> map3 = new HashMap<String, String>();
         map3.put("parse", "75th Percentile");
-        map3.put("dps", "8038.94");
+        map3.put("dps", "7345.69");
 
         HashMap<String, String> map4 = new HashMap<String, String>();
         map4.put("parse", "50th Percentile");
-        map4.put("dps", "7507.89");
+        map4.put("dps", "7035.39");
 
         HashMap<String, String> map5 = new HashMap<String, String>();
         map5.put("parse", "25th Percentile");
-        map5.put("dps", "6860.97");
+        map5.put("dps", "6640.48");
 
         HashMap<String, String> map6= new HashMap<String, String>();
         map6.put("parse", "10th Percentile");
-        map6.put("dps", "6205.95");
+        map6.put("dps", "6149.36");
 
 
 

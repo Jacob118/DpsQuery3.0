@@ -1,40 +1,74 @@
 package cn.edu.swufe.dpsquery;
 
+import android.app.Activity;
+import android.app.ListActivity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
 
-public class SummonerActivity extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class SummonerActivity extends ListActivity implements AdapterView.OnItemClickListener {
+
+    private ListView listView;
+    private String[] name={"欧米茄零式时空狭缝 阿尔法篇一层","欧米茄零式时空狭缝 阿尔法篇二层","欧米茄零式时空狭缝 阿尔法篇三层","欧米茄零式时空狭缝 阿尔法篇四层"};
+    private int[] images={R.drawable.ninesss,R.drawable.tensss,R.drawable.elevensss,R.drawable.twelvesss};
+
+    private List<Map<String,Object>> list_map=new ArrayList<Map<String,Object>>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_summoner);
-    }
+        setContentView(R.layout.activity_blackmage);
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.fuben,menu);
-        return true;
-    }
+        listView = (ListView) findViewById(R.id.listView);
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if(item.getItemId()==R.id.O9s){
-            Intent list1=new Intent(this,DpsOfSummoner1Activity.class);
-            startActivity(list1);
-        }else if(item.getItemId()==R.id.O10s){
-            Intent list2=new Intent(this,DpsOfSummoner2Activity.class);
-            startActivity(list2);
-        }else if(item.getItemId()==R.id.O11s){
-            Intent list3=new Intent(this,DpsOfSummoner3Activity.class);
-            startActivity(list3);
-        }if(item.getItemId()==R.id.O12s){
-            Intent list4=new Intent(this,DpsOfSummoner4Activity.class);
-            startActivity(list4);
+        for (int i = 0; i < 5; i++) {
+            HashMap<String, Object> items = new HashMap<String, Object>();
+
+            items.put("pic", images[i]);
+            items.put("name", name[i]);
+            list_map.add(items);
         }
-        return super.onOptionsItemSelected(item);
+
+
+        SimpleAdapter simpleAdapter=new SimpleAdapter(this,list_map,R.layout.list_items,new String[]{"pic","name"},new int[]{R.id.items_imageView1,R.id.items_textView1});
+        listView.setAdapter(simpleAdapter);
+
+        listView.setOnItemClickListener(this);
+
+
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+        if(position==0){
+
+            Intent Summ1=new Intent(this,DpsOfSummoner1Activity.class);
+            startActivity(Summ1);
+        }
+        else if(position==1){
+            Intent Summ2=new Intent(this,DpsOfSummoner2Activity.class);
+            startActivity(Summ2);
+        }
+        else if(position==2){
+            Intent Summ3=new Intent(this,DpsOfSummoner3Activity.class);
+            startActivity(Summ3);
+        }
+        else if(position==3){
+            Intent Summ4=new Intent(this,DpsOfSummoner4Activity.class);
+            startActivity(Summ4);
+        }
     }
 }

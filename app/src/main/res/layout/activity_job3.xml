@@ -1,25 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Job3Activity">
+    tools:context=".Job3Activity"
+    android:background="#757575">
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/Scholar"/>
+        android:layout_height="145dp"
+        android:background="@drawable/btn_bg_red"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginTop="45dp"
+        android:text="@string/Scholar"
+        android:textSize="23dp"
+        android:textColor="#eeeeee"/>
+
+    <Button
+        android:layout_width="409dp"
+        android:layout_height="154dp"
+        android:background="@drawable/btn_bg_red"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginTop="226dp"
+        android:text="@string/Astrologian"
+        android:textSize="23dp"
+        android:textColor="#eeeeee"/>
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/Astrologian"/>
+        android:layout_height="146dp"
+        android:background="@drawable/btn_bg_red"
+        android:layout_alignParentBottom="true"
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/Whitemage"/>
+        android:layout_marginBottom="37dp"
+        android:text="@string/Whitemage"
+        android:textSize="23dp"
+        android:textColor="#eeeeee"/>
 
-</LinearLayout>
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="114dp"
+        android:layout_height="123dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginLeft="-3dp"
+        android:layout_marginTop="67dp"
+        app:srcCompat="@drawable/xuezhe" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="114dp"
+        android:layout_height="113dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginLeft="-2dp"
+        android:layout_marginBottom="233dp"
+        app:srcCompat="@drawable/zhanxing" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="117dp"
+        android:layout_height="108dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-6dp"
+        android:layout_marginLeft="-6dp"
+        android:layout_marginBottom="54dp"
+        app:srcCompat="@drawable/baimo" />
+
+</RelativeLayout>

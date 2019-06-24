@@ -14,7 +14,7 @@ import android.widget.ImageButton;
 
 import java.net.URL;
 
-public abstract class DQActivity extends AppCompatActivity implements Runnable{
+public  class DQActivity extends AppCompatActivity {
 
     Handler handler;
 
@@ -23,17 +23,9 @@ public abstract class DQActivity extends AppCompatActivity implements Runnable{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dq);
 
-        Thread t=new Thread(this);
-        t.start();
 
-        handler=new Handler(){
 
-            @Override
-            public void handleMessage(Message msg){
 
-            }
-
-        };
     }
 
     public void openOne(View btn){
@@ -51,11 +43,7 @@ public abstract class DQActivity extends AppCompatActivity implements Runnable{
         startActivity(heal);
     }
 
-    public void run(){
 
-    }
-
-    Message msg=handler.obtainMessage();
 
 
 
