@@ -19,11 +19,7 @@
         <activity
             android:name=".DQActivity"
             android:label="选择您的职业分类">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <action android:name="android.intent.action.VIEW"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
+
 
         </activity>
         <activity
@@ -52,7 +48,13 @@
 
         <activity
             android:name=".SummonerActivity"
-            android:label="选择您想要查看的高难度副本" />
+            android:label="选择您想要查看的高难度副本" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN"/>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.LAUNCHER"/>
+        </intent-filter>
+        </activity>
     </application>
 
 </manifest>
